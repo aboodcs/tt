@@ -1,0 +1,30 @@
+// login.js
+
+// Example user data (in a real app, this would come from a database)
+const users = [
+  { username: "user1", password: "pass123" },
+  { username: "admin", password: "admin123" },
+  { username: "guest", password: "guest123" },
+];
+
+// Login function
+function login(username, password) {
+  // Check if there is a matching user
+  const user = users.find(
+    (u) => u.username === username && u.password === password
+  );
+
+  if (user) {
+    console.log(`Login successful! Welcome, ${username}.`);
+    return true;
+  } else {
+    console.log("Login failed. Invalid username or password.");
+    return false;
+  }
+}
+
+// Example calls
+login("user1", "pass123");     // Successful
+login("admin", "wrongpass");   // Failed
+login("guest", "guest123");    // Successful
+login("unknown", "test");      // Failed
