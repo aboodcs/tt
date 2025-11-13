@@ -1,0 +1,27 @@
+# MyAwesomeApp
+
+## Project Description
+MyAwesomeApp is a simple JavaScript project demonstrating:
+- User login
+- Dashboard task display
+- Settings toggle for notifications
+
+## Features
+
+### Login
+- File: `login.js`
+- Usage: Call `login(username, password)` in the console
+- Example: `login("user1", "pass123");`
+
+### Dashboard
+- File: `dashboard.js`
+- Usage: Call `showDashboard()` to display user tasks
+
+### Settings
+- File: `settings.js`
+- Usage: Call `toggleNotifications(true/false)` to enable or disable notifications
+
+## How to Run
+1. Open a terminal or browser console.
+2. Include each JS file with `<script>` tags (if in browser) or run with Node.js.
+3. Call the functions as described above to test each feature.
